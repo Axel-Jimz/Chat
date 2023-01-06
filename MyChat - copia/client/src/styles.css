@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 992px;
+    height: 100vh;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #f2f2f2;
+}
+
+.friends {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: #fff;
+}
+
+.friend {
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #a3a3a330;
+}
+
+.chat {
+    position: relative;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 40px;
+}
+
+.messages {
+    max-height: 621px;
+    padding: 1rem;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+.message {
+    padding: 0.250rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.form {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 80px;
+}
+
+input, button {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+center {
+    position: absolute;
+    top: -1.5rem;
+    left: 1.5rem;
+    width: calc(100% - 4rem);
+    height: 32px;
+    background-color: #add8e650;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #add8e650;
+}
